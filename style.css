@@ -1,0 +1,30 @@
+:root {
+    --clr-bg: #141D26;
+}
+
+@font-face {
+    font-family: 'Futura Book';
+    src: url('font/futura/Futura\ Book\ font.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Extra Black';
+    src: url('font/futura/Futura\ XBlk\ BT.ttf') format('truetype');
+}
+
+#main {
+    padding: 20px;
+    /* background-color: var(--clr-bg); */
+}
+
+#title {
+    font-family: 'Futura Extra Black';
+}
+
+#tribute-info {
+    font-family: 'Futura Book';
+}
+
+.year {
+    font-weight: bold;
+}
