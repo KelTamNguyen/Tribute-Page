@@ -2,6 +2,10 @@
     --clr-bg: #141D26;
 }
 
+* {
+    color: white;
+}
+
 @font-face {
     font-family: 'Futura Book';
     src: url('font/futura/Futura\ Book\ font.ttf');
@@ -14,17 +18,47 @@
 
 #main {
     padding: 20px;
-    /* background-color: var(--clr-bg); */
+    text-align: center;
+    background-color: var(--clr-bg);
 }
 
 #title {
     font-family: 'Futura Extra Black';
 }
 
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#img-caption {
+    margin-top: 10px;
+}
+
 #tribute-info {
     font-family: 'Futura Book';
 }
 
+#tribute-info ul {
+    /* display: flex;
+    justify-content: center; */
+    text-align: left;
+    margin: 0 auto 50px auto;
+    max-width: 550px;
+    line-height: 1.6;
+}
+
+#tribute-info li {
+    margin: 16px 0;
+}
+
 .year {
     font-weight: bold;
+}
+
+a {
+    cursor: pointer;
 }
