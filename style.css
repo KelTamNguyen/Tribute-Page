@@ -1,5 +1,6 @@
 :root {
     --clr-bg: #141D26;
+    --clr-secondary: #0a0e13;
 }
 
 * {
@@ -16,8 +17,12 @@
     src: url('font/futura/Futura\ XBlk\ BT.ttf') format('truetype');
 }
 
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #main {
-    padding: 20px;
     text-align: center;
     background-color: var(--clr-bg);
 }
@@ -26,8 +31,20 @@
     font-family: 'Futura Extra Black';
 }
 
+#title h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+#img-div {
+    padding: 5vh 0;
+    background-color: var(--clr-secondary);
+    width: 100%;
+    margin: 0;
+}
+
 #image {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -35,7 +52,9 @@
 }
 
 #img-caption {
-    margin-top: 10px;
+    margin-top: 2vh;
+    font-family: 'Futura Book';
+    font-size: 1.2em;
 }
 
 #tribute-info {
@@ -43,8 +62,6 @@
 }
 
 #tribute-info ul {
-    /* display: flex;
-    justify-content: center; */
     text-align: left;
     margin: 0 auto 50px auto;
     max-width: 550px;
@@ -53,12 +70,20 @@
 
 #tribute-info li {
     margin: 16px 0;
+    font-size: 1.5em;
 }
 
-.year {
+time {
     font-weight: bold;
 }
 
-a {
-    cursor: pointer;
+footer {
+    font-family: 'Futura Extra Black';
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
