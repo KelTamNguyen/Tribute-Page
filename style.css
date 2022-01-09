@@ -36,11 +36,12 @@ body {
     margin-bottom: 5px;
 }
 
-#img-div {
+#img-div{
     padding: 5vh 0;
     background-color: var(--clr-secondary);
     width: 100%;
     margin: 0;
+    font-family: 'Futura Book';
 }
 
 #image {
@@ -53,7 +54,6 @@ body {
 
 #img-caption {
     margin-top: 2vh;
-    font-family: 'Futura Book';
     font-size: 1.2em;
 }
 
@@ -77,6 +77,18 @@ time {
     font-weight: bold;
 }
 
+#quote {
+    padding: 5vh 0;
+    background-color: var(--clr-secondary);
+    width: 100%;
+    margin: 0;
+    font-family: 'Futura Book';
+}
+
+blockquote p {
+    font-size: 1.5em;
+}
+
 footer {
     font-family: 'Futura Extra Black';
 }
@@ -86,4 +98,11 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+@media (min-width: 768px) {
+    #quote {
+        padding: 5vh 30vw;
+        width: inherit;
+    }
 }
